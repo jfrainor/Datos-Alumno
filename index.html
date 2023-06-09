@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <br>
+        <h2>Registro del Alumno</h2>
+        <form method="POST" action="programa.php">
+            <div class="form-group">
+                <label>Cedula de identidad:</label>
+                <input type="text" name="cedula[]" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label>Nombre:</label>
+                <input type="text" name="nombre[]" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label>Nota de Matematicas:</label>
+                <input type="number" name="matematicas[]" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label>Nota de Fisica:</label>
+                <input type="number" name="fisica[]" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label>Nota de Programacion:</label>
+                <input type="number" name="programacion[]" class="form-control" required>
+            </div>
+            <hr>
+            <button type="submit" class="btn btn-primary">Guardar</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
